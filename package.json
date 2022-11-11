@@ -1,0 +1,18 @@
+{
+  "name": "srfautotipper",
+  "version": "1.0.0",
+  "description": "A bot to find the most common tip on the SRF tippspiel and tip accordingly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "axios": "^1.1.3",
+    "dotenv": "^16.0.3"
+  }
+}
