@@ -1,7 +1,7 @@
 {
   "functions": [
     {
-      "source": ".",
+      "source": "src",
       "codebase": "default",
       "ignore": [
         "node_modules",
@@ -9,8 +9,9 @@
         "firebase-debug.log",
         "firebase-debug.*.log"
       ],
+      "runtime": "nodejs16",
       "predeploy": [
-        "npm --prefix \"$RESOURCE_DIR\" run build"
+        "pnpm --prefix \"$RESOURCE_DIR\" run build"
       ]
     }
   ]

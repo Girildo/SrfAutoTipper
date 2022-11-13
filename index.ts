@@ -4,11 +4,7 @@ import { DateTime } from 'luxon';
 import { sendBet } from './apiClient';
 import { Fixture, UnparsedFixture } from './types';
 import functions, { logger } from 'firebase-functions';
-import {
-  defineInt,
-  defineSecret,
-  defineString,
-} from 'firebase-functions/params';
+import { defineInt } from 'firebase-functions/params';
 
 /**
  * 1. Load the json from the website
@@ -37,8 +33,9 @@ function range(size: number, startAt = 0) {
   return [...Array(size).keys()].map((i) => i + startAt);
 }
 
-export default functions.pubsub
-  .schedule('50 9,12,14,15,18 18-20 11-12 *')
+export const f = functions
+  .region('eu-west6')
+  .pubsub.schedule('50 9,12,14,15,18 18-20 11-12 *')
   .timeZone('UTC')
   .onRun(async (ctx) => {
     const fixtureTable = await downloadFixtureTable();

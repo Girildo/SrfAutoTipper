@@ -2,7 +2,7 @@
   "name": "srfautotipper",
   "version": "1.0.0",
   "description": "A bot to find the most common tip on the SRF tippspiel and tip accordingly.",
-  "main": "build/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
