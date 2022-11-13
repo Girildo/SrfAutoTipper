@@ -2,17 +2,35 @@
   "name": "srfautotipper",
   "version": "1.0.0",
   "description": "A bot to find the most common tip on the SRF tippspiel and tip accordingly.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^4.8.4"
+    "@types/jmespath": "^0.15.0",
+    "@types/luxon": "^3.1.0",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "5.0.0",
+    "@typescript-eslint/parser": "5",
+    "eslint": "8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-n": "15.0.0",
+    "eslint-plugin-promise": "6.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "*"
   },
   "dependencies": {
+    "@firebase/app-types": "^0.8.1",
     "axios": "^1.1.3",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "firebase-admin": "^11.2.1",
+    "firebase-functions": "^4.0.2",
+    "jmespath": "^0.16.0",
+    "luxon": "^3.1.0"
   }
 }
